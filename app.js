@@ -24,15 +24,15 @@
 
 (function(){
 
-	$(#meteo).click(function() {
-		var url = "http://openweathermap.org/";
+	$("#meteo").click(function() {
+		var url = "http://api.openweathermap.org/data/2.5/weather?q=Toulouse,fr&appid=e05300d9bacf77c059ab39927fd4909d&units=metric";
 		$.ajax(url)
 		.done(meteoDone)
 		.fail(meteoFail)
 
 
 	});
-})
+});
 
 
 
